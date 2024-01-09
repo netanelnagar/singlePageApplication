@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Include jQuery from CDN -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./main.js"></script>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <header class="header">
+        <a href="#Home" onclick="whichPage(this)" data-target="#Home">Home</a>
+        <a href="#Data" onclick="whichPage(this)" data-target="#Data">Favorite</a>
+        <a href="#About" onclick="whichPage(this)" data-target="#About">About</a>
+        <div>
+            <input type="text" id="inp">
+            <button onclick="changeValue()">search</button>
+        </div>
+    </header>
+    <div id="root">
+        <div class="loader"></div>
+        
+    </div>
+    <div class="toDeleteFavorite">
+        <button id="close">close</button>
+    </div>
+
+</body>
+
+</html>
